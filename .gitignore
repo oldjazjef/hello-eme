@@ -114,5 +114,4 @@ package-lock.json
 !.yarn/plugins
 !.yarn/sdks
 !.yarn/versions
-yarn.lock
 frontend/build
