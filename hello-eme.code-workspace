@@ -5,8 +5,12 @@
 			"path": "./frontend"
 		},
 		{
-			"name": "backend",
-			"path": "./backend"
+			"name": "server",
+			"path": "./server"
+		},
+		{
+			"name": "packages",
+			"path": "./packages"
 		},
 		{
 			"name": "root",
@@ -16,7 +20,7 @@
 	"settings": {
 		"files.exclude": {
 			"frontend": true,
-			"backend": true,
+			"server": true,
 			"**/.gitmodules": true,
 			".yarn": true,
 			"yarn.lock": true
