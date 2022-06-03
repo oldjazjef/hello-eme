@@ -1,15 +1,10 @@
 {
   "private": true,
+  "name": "@hello-eme/root",
   "workspaces": [
     "server",
-    "frontend",
-    "./"
+    "frontend"
   ],
-  "scripts": {
-    "postinstall": "yarn workspace . run postinstall-client",
-    "postinstall-client": "yarn workspace @hello-eme/frontend install && yarn workspace @hello-eme/frontend run build",
-    "postinstall-server": "yarn workspace server install"
-  },
   "packageManager": "yarn@3.2.1",
   "engines": {
     "node": "16.x",
