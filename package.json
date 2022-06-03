@@ -3,16 +3,17 @@
   "workspaces": [
     "server",
     "frontend",
-    "packages/*"
+    "./"
   ],
   "scripts": {
-    "postinstall": "if [ $CLIENT_ENV ]; then npm run postinstall-client; elif [ $SERVER_ENV ]; then npm run postinstall-server; else echo no environment detected, please set CLIENT_ENV or SERVER_ENV; fi",
-    "postinstall-client": "cd frontend && npm install && npm run build",
-    "postinstall-server": "cd server && npm install"
+    "postinstall": "yarn run postinstall-client",
+    "postinstall-client": "yarn workspace @hello-eme/frontend install && yarn workspace @hello-eme/frontend run build",
+    "postinstall-server": "yarn workspace server install"
   },
   "packageManager": "yarn@3.2.1",
   "engines": {
-    "node": "16.x"
+    "node": "16.x",
+    "yarn": "3.x"
   },
   "dependencies": {
     "postinstall": "^0.7.4"
