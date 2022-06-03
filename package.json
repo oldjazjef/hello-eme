@@ -6,8 +6,12 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "yarn --cwd backend start",
-    "build": "yarn --cwd frontend build"
+    "postinstall": "if [ $CLIENT_ENV ]; then npm run postinstall-client; elif [ $SERVER_ENV ]; then npm run postinstall-server; else echo no environment detected, please set CLIENT_ENV or SERVER_ENV; fi",
+    "postinstall-client": "cd packages/client && npm install && npm run build",
+    "postinstall-server": "cd packages/server && npm install"
   },
-  "packageManager": "yarn@3.2.1"
+  "packageManager": "yarn@3.2.1",
+  "engines": {
+    "node": "16.x"
+  }
 }

@@ -23,7 +23,7 @@
 			"server": true,
 			"**/.gitmodules": true,
 			".yarn": true,
-			"yarn.lock": true
+			"yarn.lock": false
 			//"**/.gitignore": true
 		},
 		"workbench.iconTheme": "material-icon-theme",
