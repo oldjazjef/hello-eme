@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"name": "frontend",
+			"path": "./frontend"
+		},
+		{
+			"name": "backend",
+			"path": "./backend"
+		},
+		{
+			"name": "root",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"frontend": true,
+			"backend": true,
+			"**/.gitmodules": true,
+			".yarn": true,
+			"yarn.lock": true
+			//"**/.gitignore": true
+		},
+		"workbench.iconTheme": "material-icon-theme",
+		"workbench.view.alwaysShowHeaderActions": true,
+		"breadcrumbs.enabled": true,
+		/**
+		 * This is needed in order for visual studio code to cope with the project structure and the eslint files
+		 * TODO further investate
+		 */
+		 "eslint.workingDirectories": [
+			{
+				"directory": "./",
+				"changeProcessCWD": true
+			}
+		]
+	}
+}
