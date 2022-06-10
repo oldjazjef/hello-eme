@@ -1,1 +1,2 @@
-web: yarn workspace @hello-eme/frontend start
+web: yarn workspace @hello-eme/api start
+

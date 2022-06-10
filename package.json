@@ -3,6 +3,7 @@
   "name": "@hello-eme/root",
   "workspaces": [
     "server",
+    "server/hello-eme-api",
     "frontend"
   ],
   "packageManager": "yarn@3.2.1",
@@ -11,6 +12,7 @@
     "yarn": "1.x"
   },
   "dependencies": {
+    "pg-connection-string": "^2.5.0",
     "postinstall": "^0.7.4"
   }
 }
