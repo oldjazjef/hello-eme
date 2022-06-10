@@ -1,2 +1,2 @@
-web: yarn workspace @hello-eme/api start
+web: yarn workspace @hello-eme/api build && yarn workspace @hello-eme/api start
 
