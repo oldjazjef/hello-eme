@@ -4,4 +4,7 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  admin: {
+    url: env('ADMIN_URL', '0.0.0.0'),
+  }
 });
