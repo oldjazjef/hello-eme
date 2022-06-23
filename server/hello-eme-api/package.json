@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "heroku:setup": "yarn build && yarn start"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.12",
