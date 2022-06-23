@@ -8,7 +8,7 @@
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
-    "heroku:setup": "yarn build && yarn start"
+    "heroku:setup": "yarn build --max_old_space_size=4096 && yarn start --max_old_space_size=4096"
   },
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.12",
